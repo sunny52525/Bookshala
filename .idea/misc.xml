@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/compose-model-1650806645052.xml" value="0.27280405405405406" />
+        <entry key="../../../../layout/compose-model-1650813005338.xml" value="0.27280405405405406" />
+        <entry key="app/src/main/java/com/sunny/handbook/Home.kt" value="0.8086642599277978" />
+        <entry key="app/src/main/java/com/sunny/handbook/ui/components/HomeComponents.kt" value="0.5" />
+        <entry key="app/src/main/java/com/sunny/handbook/ui/screen/BookAdd.kt" value="0.25" />
+        <entry key="app/src/main/java/com/sunny/handbook/ui/screen/BookDetail.kt" value="0.3111111111111111" />
+        <entry key="app/src/main/java/com/sunny/handbook/ui/screen/Home.kt" value="0.165" />
+        <entry key="app/src/main/java/com/sunny/handbook/ui/screen/Login.kt" value="0.2074074074074074" />
+        <entry key="app/src/main/java/com/sunny/handbook/ui/screen/ProfileScreen.kt" value="0.25" />
+        <entry key="app/src/main/java/com/sunny/handbook/ui/screen/ScheduleScreen.kt" value="0.25" />
+        <entry key="app/src/main/res/drawable/ic_book.xml" value="0.1575" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_xml.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

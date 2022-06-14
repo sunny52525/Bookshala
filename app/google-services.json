@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "209069629564",
+    "project_id": "book--shala",
+    "storage_bucket": "book--shala.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209069629564:android:8190ed1f00f6274ab569f9",
+        "android_client_info": {
+          "package_name": "com.sunny.handbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209069629564-pqi11jkap0u4dueacbakgjngqc7e5f9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4rQj1UslcnSKmGf2UEejVVfOHf2SptFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209069629564-pqi11jkap0u4dueacbakgjngqc7e5f9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
