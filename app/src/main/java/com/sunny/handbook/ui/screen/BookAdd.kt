@@ -378,31 +378,31 @@ fun BookAdd() {
                         }
                         AsyncImage(model = null, contentDescription = "")
 
-//                        if (imageUploadStatus is RequestResult.Loading) Column(
-//                            modifier = Modifier
-//                                .height(5.dp)
-//                                .fillMaxWidth((progress?.toFloat() ?: 0.0f) / 100f)
-//                                .align(Alignment.BottomStart)
-//                                .background(Color.Green),
-//                        ) {
-//
-//                        }
+                        if (imageUploadStatus is RequestResult.Loading) Column(
+                            modifier = Modifier
+                                .height(5.dp)
+                                .fillMaxWidth((progress?.toFloat() ?: 0.0f) / 100f)
+                                .align(Alignment.BottomStart)
+                                .background(Color.Green),
+                        ) {
 
-//                        if (imageUploadStatus is RequestResult.Loading) {
-//                            Column(
-//                                Modifier
-//                                    .zIndex(10f)
-//                                    .align(Alignment.Center)
-//                            ) {
-//                                CircularProgressIndicator(color = HBBlue)
-//                            }
-//                        }
-//                        if (imageUploadStatus is RequestResult.Error) {
-//                            context.showToast(imageUploadStatus?.error)
-//                            viewModel.imageUploadStatus.postValue(RequestResult.Idle())
-//                            viewModel.imageUrl.value = ""
-//
-//                        }
+                        }
+
+                        if (imageUploadStatus is RequestResult.Loading) {
+                            Column(
+                                Modifier
+                                    .zIndex(10f)
+                                    .align(Alignment.Center)
+                            ) {
+                                CircularProgressIndicator(color = HBBlue)
+                            }
+                        }
+                        if (imageUploadStatus is RequestResult.Error) {
+                            context.showToast(imageUploadStatus?.error)
+                            viewModel.imageUploadStatus.postValue(RequestResult.Idle())
+                            viewModel.imageUrl.value = ""
+
+                        }
 
 
                     }
@@ -419,22 +419,22 @@ fun BookAdd() {
                 HBOutlinedTextField(value = "",
                     hint = "book name",
                     onValueChange = {
-//                        viewModel.bookName.value = it
+                        viewModel.bookName.value = it
                     })
                 HBOutlinedTextField(value = "",
                     hint = "Author name",
                     onValueChange = {
-//                        viewModel.bookAuthor.value = it
+                        viewModel.bookAuthor.value = it
 
                     })
                 HBOutlinedTextField(value = "",
                     hint = "Publication",
                     onValueChange = {
-//                        viewModel.publication.value = it
+                        viewModel.publication.value = it
 
                     })
                 HBOutlinedTextField(value = "", hint = "Price", onValueChange = {
-//                    viewModel.price.value = it
+                    viewModel.price.value = it
 
                 })
                 HBButton(
@@ -443,52 +443,52 @@ fun BookAdd() {
                     backgroundColor = HBBlue,
                 ) {
 
-//                    viewModel.addBook()
+                    viewModel.addBook()
 
                 }
 
 
 
-//                when (bookAdd) {
-//                    is RequestResult.Error -> {
-//                        findActivity()?.showToast(bookAdd?.error)
-//                        viewModel.bookAdd.postValue(RequestResult.Idle())
-//                    }
-//                    is RequestResult.Idle -> {
-//
-//                    }
-//                    is RequestResult.Loading -> {
-//
-//                    }
-//                    is RequestResult.Success -> {
-//                        bookAddVisible = true
-//                        viewModel.bookAdd.postValue(RequestResult.Idle())
-//
-//                    }
-//                    null -> {
-//
-//                    }
-//                }
-//
-//            }
-//
-//            if (bookAddVisible) {
-//                SuccessDialog {
-//                    bookAddVisible = false
-//                    destinationsNavigator?.popBackStack()
-//                    viewModel.getHomeData()
-//                    viewModel.resetBook()
-//                }
-//            }
-//        }
-//        if (bookAdd is RequestResult.Loading) {
-//            Column(
-//                Modifier
-//                    .zIndex(10f)
-//                    .align(Alignment.Center)
-//            ) {
-//                LoadingIndicator()
-//            }
+                when (bookAdd) {
+                    is RequestResult.Error -> {
+                        findActivity()?.showToast(bookAdd?.error)
+                        viewModel.bookAdd.postValue(RequestResult.Idle())
+                    }
+                    is RequestResult.Idle -> {
+
+                    }
+                    is RequestResult.Loading -> {
+
+                    }
+                    is RequestResult.Success -> {
+                        bookAddVisible = true
+                        viewModel.bookAdd.postValue(RequestResult.Idle())
+
+                    }
+                    null -> {
+
+                    }
+                }
+
+            }
+
+            if (bookAddVisible) {
+                SuccessDialog {
+                    bookAddVisible = false
+                    destinationsNavigator?.popBackStack()
+                    viewModel.getHomeData()
+                    viewModel.resetBook()
+                }
+            }
+        }
+        if (bookAdd is RequestResult.Loading) {
+            Column(
+                Modifier
+                    .zIndex(10f)
+                    .align(Alignment.Center)
+            ) {
+                LoadingIndicator()
+            }
         }
     }
 
